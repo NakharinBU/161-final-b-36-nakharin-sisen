@@ -7,6 +7,13 @@ public class FireSpell : Spell
     private void Start()
     {
         base.Cast();
-        Cast("Fire Pillar Spell", 5);
+        Cast();
+    }
+
+
+    public override void Cast()
+    {
+        Cast("Fire Pillar Spell");
+        Cast("Fire Pillar Spell", 2);
     }
 }

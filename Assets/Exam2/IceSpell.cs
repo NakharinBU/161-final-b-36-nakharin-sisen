@@ -6,7 +6,13 @@ public class IceSpell : Spell
 {
     void Start()
     {
-        Cast("Ice Spell", 4);
+        Cast();
+    }
+
+    public override void Cast()
+    {
+        Cast("Ice Tomb Spell");
+        Cast("Ice Tomb Spell", 4);
     }
 
 }
